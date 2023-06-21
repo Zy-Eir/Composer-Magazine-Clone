@@ -1,0 +1,310 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: proxima-nova, sans-serif;
+}
+
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+
+button{
+    border: 0;
+    padding: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-wrapper{
+    position: relative;
+}
+
+
+.nav-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    width: 100%;
+    
+   
+}
+
+.follow-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.nav-socials-wrapper{
+    text-align: right;
+    margin-right: 0.3rem;
+    padding-right: 1rem;
+}
+
+
+.nav-socials{
+    color: #fff;
+    width: 30px;
+    transition: 500ms ease;
+}
+
+.nav-socials:hover{
+    color: #b60006;
+    transition: 500ms ease;
+}
+
+
+.nav-overlay-2{
+    grid-template-columns: 1fr;
+    height: 100%;
+   
+    transition: 750ms ease;
+}
+
+.nav-overlay-2:hover{
+    transition: 750ms ease;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.nav-stylings{
+    padding: 1rem 0rem;
+    z-index: 2;
+}
+
+
+
+.menu-button-wrapper{
+    padding-left: 1rem;
+   
+
+}
+
+.menu-button{
+    color: #fff;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-link-styles{
+ 
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-link{
+    font-size: 16px;
+    color: #fff;
+    padding-left: 1rem;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: gray;
+    transition: 500ms ease;
+}
+
+.nav-img-stylings-wrapper{
+    padding: 1rem;
+}
+
+.menu-container{
+    background-color: #000;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    z-index: 3;
+    transition: 500ms ease;
+    
+
+}
+
+
+
+
+.home-link-wrapper{
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.home-link{
+    color: #b60006;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-text-wrapper{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.nav-text{
+    font-size: 35px;
+    color: #fff;
+    padding: 18rem 1rem 0rem 1rem;
+}
+
+
+
+.nav-img-stylings{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.header-image-stylings{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    min-height: 530px;
+}
+   
+.spitfire-link-wrapper{
+    display: none;
+    padding-right: 1rem;
+}
+
+.spitfire-link{
+    color: #fff;
+
+}
+
+@media(max-width:767px){
+    .menu-container{
+        animation: 650ms ease mobile-slide;
+    }
+
+    @keyframes mobile-slide {
+        0%{
+            transform: translateX(-100%);
+        }
+    
+        
+    
+        100%{
+            transform: translateX(0%);
+        }
+    }
+}
+
+
+@media(min-width:768px){
+
+    .nav-text{
+        font-size: 48px;
+    }
+
+    .menu-container{
+        background-color: rgba(0, 0, 0, .75);
+    }
+
+
+    .home-link{
+        font-size: 20px;
+    }
+
+    .spitfire-link-wrapper{
+        display: block;
+        text-align: right;
+        line-height: 1.2;
+        letter-spacing: 2.5px;
+    }
+
+
+
+    .spitfire-link{
+        font-size: 20px;
+    }
+
+    .nav-stylings{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+   
+
+    .list-wrapper{
+        background: #000;
+        width: 45%;
+        animation: 650ms ease menu-slide;
+    }
+
+    @keyframes menu-slide {
+        0%{
+            transform: translateX(-100%);
+        }
+    
+        
+    
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    
+
+
+    .menu-button{
+        font-size: 20px;
+    }
+
+    .home-link-wrapper{
+        text-align: center;
+    }
+
+
+  
+
+
+}
+
+
+@media(min-width:1024px){
+    .nav-text{
+        font-size: 56px;
+    }
+
+
+    .list-wrapper{
+        width: 30%;
+    }
+
+    .menu-button{
+        font-size: 25px;
+    }
+    
+    .home-link{
+        font-size: 25px;
+    }
+
+    .spitfire-link{
+        font-size: 25px;
+    }
+
+    
+
+}

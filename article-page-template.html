@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global-stylings.css">
+    <link rel="stylesheet" href="article-page-template-stylings.css">
+    <title>Document</title>
+</head>
+<body>
+  
+      <!--
+        Start of nav section
+    -->
+    <div class="header-wrapper">
+       
+            <img class="header-image-stylings " src="MikeyJ.avif" alt="">
+       
+        <div class="nav-overlay nav-stylings">
+            
+            <div class="menu-button-wrapper">
+
+                <button id="hamburger-button" class="menu-button" >
+                    MENU
+                </button>
+                
+            </div>
+
+            <div class="home-link-wrapper">
+                <a class="home-link" href="index.html">Composer</a>
+            </div>
+            
+
+            <div class="spitfire-link-wrapper">
+                <a class="spitfire-link" href="https://www.spitfireaudio.com/">Spitfire Audio</a>
+            </div>
+            
+            
+
+        </div>
+
+
+       
+       
+       
+
+    </div>
+
+    <div style="display: none;" class="menu-container" id="nav-dropdown-section" >
+        <ul class="list-wrapper">
+            <li class="nav-link-styles">
+                <a class="nav-link" id="exit-button">
+                    Close
+                </a>
+               
+            </li>
+
+            <li class="nav-link-styles" >
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-link-styles" >
+                <a class="nav-link" href="">Articles</a>
+            </li>
+
+            <li class="nav-link-styles">
+                <a class="nav-link" href="">Podcast</a>
+            </li>
+
+
+            <li class="nav-link-styles">
+                <a class="nav-link" href="">Watch</a>
+            </li>
+
+            <li class="nav-link-styles follow-wrapper">
+                <a class="nav-link" href="">Follow</a>
+
+                <div class="nav-socials-wrapper">
+                    
+                    <a href=" https://www.instagram.com/composer_magazine/">
+                        <svg class="nav-socials" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com/Composer_Mag">
+                        <svg class="nav-socials" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/composermagazine/">
+                        <svg class="nav-socials" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/user/spitfireaudiollp">
+                        <svg class="nav-socials" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"/>
+                        </svg>
+                    </a>             
+
+
+                   
+
+                </div>
+              
+            </li>
+
+
+            <div class="nav-img-stylings-wrapper">
+                <a href="Gustavo-Santaolalla.html">
+                    <img class="nav-img-stylings img-hover" 
+                    src="nav-menu-pic.avif"
+                    alt="">
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    
+    <!--
+        End of nav section
+    -->
+  
+ 
+
+    <section>
+        <div class="article-stylings">
+            <h1 class="article-title">
+                Mikey J on Top Boy, sampling and the ‘sonic well’
+            </h1>
+            
+
+            <div class="content-container">
+                <p class="content-writer-name">
+                    Words by 
+                   <a class="name-highlight" href="">
+                        Emma Warren
+                   </a>
+                </p>
+    
+    
+                <p class="content-text">
+                    One of the definitions of composing for screen is that 
+                    you’re there to create a sonic arc that will carry the scene 
+                    and translate or amplify the intended emotion. For Top Boy, 
+                    set on the fictional Summerhouse estate in East London and newly 
+                    returned to Netflix for a new season, this definition rings 
+                    true in a particularly subliminal and low-key fashion. 
+                </p>
+
+
+                <p class="content-text">
+                    “It sits in a space of being unsettling,” 
+                    says Michael ‘Mikey J’ Asante MBE, who worked with Brian Eno on the score 
+                    and is also the co-artistic director of award-winning dance company Boy Blue.
+                    “You’re never 100% comfortable. The music sits in that unsettling space, 
+                    where it’s always dark, always grey. We’re never doing a chase scene with big strings.” 
+                </p>
+
+                <div class="content-img-container">
+
+                    <img class="content-img" src="TopBoy-pic1.avif"
+                    alt="">
+
+                    <img class="content-img" src="TopBoy-pic2.avif"
+                    alt="">
+
+                </div>
+               
+
+                
+
+
+                <p class="content-text">
+                    The pair began working together on the Netflix iterations of the show and Mikey describes him 
+                    as ‘an awesome collaborator’. “Brian’s stuff is more sonic, more synth, pad-led,” 
+                    says Mikey J. “My stuff is a lot more rhythmic. Mine is drums and finding ways to blanket or 
+                    soften those drums in the background… I try and create ambience with more stuff that’s driving 
+                    forward.” They’d send music back and forth, resampling and changing each other’s work before 
+                    working together in person on the final score. 
+                </p>
+
+
+                <p class="content-text">
+                    Mikey describes a scene at the end of the previous series 
+                    (the first two series on Channel 4 are now re-branded Summerhouse,
+                    with two subsequent series under the Top Boy name on Netflix) as an 
+                    example of how they worked together. “The character Dushane was walking 
+                    down a valley in Jamaica and we see the expanse, the trees. I made a drum pattern,
+                    and the drums started picking up or getting more aggressive.” This, he says, 
+                    was the pair sitting down with a track he’d laid down, plus this drum section, 
+                    with Eno putting effects over the top ‘which we lifted and built as it went across’. 
+                    “Then he layered one of his tracks under mine. It was a hodgepodge of different vibes. 
+                    It can be that loose and that free, just two people in a room, vibing”. The new series was 
+                    ‘a bit more disparate’ partly because of Covid but also because of new working processes 
+                    which meant that each composer was given set cues which were then augmented by a music editor.
+                </p>
+
+                
+                
+            </div>
+
+        </div>
+
+        <div class="content-vid-container">
+            <a href="">
+                <img class="content-img" src="bwg.avif"
+                alt="">
+            </a>
+        </div>
+
+
+        <div class="article-stylings">
+            <p class="content-text">
+                Mikey J’s relationship with the TV show precedes its debut in 2011. 
+                He’s a man of many hats, one of which involves a long history as a 
+                primo grime and hip hop producer, with artists trooping into the bedroom 
+                studio in his parent's house to record certifiable bangers. He’s been working 
+                with actor and musician Kano (Kane Robinson, who plays Sully in Top Boy) since 
+                his earliest mixtapes in the mid-2000s and produced half of the tracks on his 
+                Mercury-nominated, MOBO-winning Home Sweet Home.
+            </p>
+
+            <p class="content-text">
+                The usual separation between actors and composers is bridged by his involvement 
+                in the real-life soundtrack to the fictional characters’ musical life. 
+                “It reminds me of the artist's scene of old,” he says. “I think about Basquiat and
+                Keith Haring. Madonna was involved, the poets, the actors, the DJs. That’s what the 
+                art scene is meant to be, that we’re bouncing off each other. The art consistently 
+                rubs onto each element.” This is, he says, what broader hip hop culture is all about: 
+                it’s more than just adding a certain beat. “It’s a route to say or do or be you,” he says. 
+                “It’s understanding the processes and the ways that hip hop music is made and what can be learned 
+                from it. Hip hop is an application to manifest what is true in you.” 
+            </p>
+
+
+            <p class="standout-text">
+                "I like to have the physical sound to stretch, 
+                expand or use source material to create something fresh."
+            </p>
+
+
+            <p class="content-text">
+                His home studio set-up is pared back and necessarily portable, 
+                augmented with Maschine, which he has been using since it came out. 
+                Before that, he used a hybrid of Native Instruments’ Battery drum sampler and the MPC2000.
+                “I’ve just got a laptop screen, an Apollo Twin, and my laptop. I find myself in the theatre space, 
+                find myself in Brian’s studio, find myself in my studio in Hackney Wick and I’m teaching as well, 
+                so the power lives in that space, carried on my back essentially.” He works in Ableton mostly. 
+                “Sampling, I use that as my main aesthetic. I bounce to audio, I don’t usually use MIDI. I like 
+                to have the physical sound to stretch, expand or use source material to create something fresh. 
+                I like the genealogy, being able to trace back. You can control the timeline in quite a powerful way."
+            </p>
+
+            <p class="content-text">
+                Students who attend Mikey J’s Creative Sampling course, 
+                lectures and masterclasses at Guildhall School of Music, 
+                where he is a Fellow, will be well aware of his process. 
+                It’s necessarily malleable, given the variety of spaces 
+                he operates within: music (as a producer), soundtracks 
+                (as a composer), and within theatre and dance.“I created 
+                the concept of a sonic repository known as ‘the well’, and 
+                each project starts with me drawing from it,” he says. 
+                “The well has to have the best source of water to feed the crops,
+                 the feed the animals, to feed ourselves. 
+                 I have to make sure the well has the right source material in it 
+                 so that I can take a drink from it and be in the mode for that project.”
+            </p>
+        </div>
+
+
+        <div class="content-vid-container">
+            <a href="">
+                <img class="content-img" src="dance.avif"
+                alt="">
+            </a>
+        </div>
+
+
+        <div class="article-stylings">
+            <p class="content-text">
+                The other part, he says, is that he treats his process ‘like a chef’.
+                “Obviously you want to save a pre-set, set up a chain of VSTs or plug-ins, 
+                but I’ll sit down and create an ingredients list which then becomes the 
+                recipe to do that piece of work in different spaces. I have loads of little 
+                recipes sitting around to get me started. Recipes for Top Boy or for The Three 
+                Lives Of Michael X I did for the BBC. Things I can grab and use when I’m starting.” It’s an approach he’s used for his recent National Geographic score for Clotilda. “It’s about one of the last slave ships to come into America. Slavery was abolished and this guy Timothy Meaher wanted to do one last illegal run. It was a business at the time. I made a very strong beat-led piece, rhythmic, using a lot of African drums.”
+            </p>
+
+            <p class="content-text">
+                The East Londoner co-founded the internationally successful dance company 
+                Boy Blue with Kenrick Sandy – also a newly-minted MBE – back in 2001. 
+                He’d been dancing since the age of five years old but the company, 
+                which specialises in hip hop dance, came into existence because of 
+                constraints he faced. “I didn’t always want to make three-minute songs. 
+                When you move into the music world, especially as a young budding Black artist, 
+                that’s the space they want to place you in. They don’t talk about the other side 
+                of the world, which is long-form music-making.” His desire to make 15-minute pieces 
+                led to their 90-minute Pied Piper show, which went on to win an Olivier in 2007. 
+                Two decades of running a company informs his scoring work in full-spectrum fashion simply because he understands the realities of finance, direction and music supervision because he does all of this with Boy Blue. Or as he puts it, ‘iron sharpening iron’. 
+            </p>
+
+            <p class="standout-text">
+                "Hip hop is just as elite, just as excellent as any other art form on the planet."
+            </p>
+
+
+            <p class="content-text">
+                His experience as a dancer affects the production too. “I don’t think about it physically but I do it, whilst I’m creating. I feel the movement: it’s totally connected to the feeling.” He’s been working on Ballet Black’s latest production and supplied music for immersive dance performance TRAPLORD that’s currently playing in London. He’s also working on his own music: “Maybe this is the point where I tease it: I’m gonna do an album, and that will exist in some form by the mid-part of this year.”
+            </p>
+
+
+            <p class="content-text">
+                It was this rich and broad creative excellence that led to his MBE. “It was a bit of a rollercoaster of emotions,” he says of being included in the Queen’s 2022 New Year's Honours list. His dad had recently died and Mikey’s first thought on receiving the letter related to the loss: ‘what would my dad say?’ He knew that his dad’s response would be positive: to take it. “The second [thought] was that I don’t feel too comfortable with what an MBE means so I needed more guidance from the family.” 
+            </p>
+        </div>
+
+
+        <div class="content-vid-container">
+            <a href="">
+                <img class="content-img" src="MichaelMikeyJAsantePhotoCarlFox.avif"
+                alt="">
+            </a>
+        </div>
+
+
+
+        <div class="article-stylings">
+            <p class="content-text">
+                The detail of the award – for services to hip hop dance and music – swung it. “I don’t think there’s an honour that looks like the one I received,” he says. “Hip hop being at the centre of that is a true acknowledgement of the art form.” It’s a focus that he brings to the centre of his work at Guildhall and elsewhere. “Hip hop is just as elite, just as excellent as any other art form on the planet. What hip hop has done and how it’s traversed the generation, still continues to bring in young people and yet still brings in its own traditional values is a true teaching tool to teach music in the UK. The MBE clarified my thinking on that.” 
+            </p>
+
+            <p class="content-text">
+                The recognition brought with it one more question, which he was able to deal with in a more straightforward fashion. “It made me wonder, have I come to the top of my career?” The answer to his rhetorical question is emphatic: “No. The work hasn’t even started.”
+            </p>
+
+           
+        </div>
+
+
+        <div class="logo-styling-wrapper"> 
+            <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="logo-stylings" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 290.2 364.1" style="enable-background:new 0 0 290.2 364.1;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#BE0101;}
+                </style>
+                <title>Composer_c_logo</title>
+                <g>
+                    <g>
+                        <path class="st0" d="M20.9,135.1C20.9,54.8,81.6,0,157.9,0c59.5,0,92.8,31.3,111.2,63.8l-47.8,23.5c-11-21.1-34.5-38-63.4-38
+                            c-45.4,0-79.9,36.4-79.9,85.7s34.5,85.7,79.9,85.7c29,0,52.5-16.4,63.4-38l47.8,23.1c-18.8,32.5-51.7,64.2-111.2,64.2
+                            C81.6,270.1,20.9,215.3,20.9,135.1z"/>
+                    </g>
+                    <rect x="20.7" y="315.2" class="st0" width="248.6" height="48.9"/>
+                </g>
+                </svg>
+        </div>
+
+    </section>
+
+
+ <script src="global-javascript.js"></script>
+</body>
+</html>
