@@ -2,9 +2,13 @@ html, body{
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: proxima-nova, sans-serif;
+    font-family: proxima;
 }
 
+@font-face {
+    font-family: proxima;
+    src: url(proxima_ssv/ProximaNova-Regular.otf);
+}
 
 p{
     margin: 0;
