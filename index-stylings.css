@@ -1,9 +1,10 @@
 
 
 
-.article-container{
+.article-container{      
     display: grid;
     grid-template-columns: 1fr;
+
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
     row-gap: 1rem;
 }
@@ -38,6 +39,7 @@
 }
 
 .text-overlay{
+   
     color: #fff;
     font-size: 25px;
     font-weight: 500;
