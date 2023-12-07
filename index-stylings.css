@@ -19,7 +19,20 @@
 
 .image-wrapper{
     position: relative;
-    
+    transition: 750ms ease;
+   
+}
+
+.article-hidden{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 750ms ease;
+}
+
+.article-visible{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 750ms ease;
 }
 
 

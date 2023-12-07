@@ -57,7 +57,7 @@ const closeMenu = function () {
     
 };
 
-  if (darkMode === "enabled") { //checks if dar
+  if (darkMode === "enabled") { // checks if dark mode is enabled
       enableDarkMode();
   }
 
@@ -71,8 +71,31 @@ const closeMenu = function () {
     console.log(darkMode);
   }
  });
+ 
 
+// fade in on scroll section
 
+  const articleContainer = document.querySelector(".article-container");
+  const articleContent = document.querySelectorAll("div.image-wrapper");
+  
 
+  const options = { 
+    root: null,
+    threshold: 0.5,
+    rootMargin: "0%",
+  };
 
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) {
+        return;
+      } else {
+         entry.target.classList.add("article-visible");
+         observer.unobserve(entry.target);
+      }
+    });
+  }, options);
 
+    articleContent.forEach(articleContainer => {
+    observer.observe(articleContainer);
+  });
